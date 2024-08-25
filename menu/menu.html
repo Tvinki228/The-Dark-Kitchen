@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../icons/icon-logo.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Tenor+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="menu.css" />
+
+        <script defer type="module" src="../script.js"></script>
+        <script defer type="module" src="basket.js"></script>
+        <title>Menu</title>
+    </head>
+    <body class="page">
+        <header class="page__header">
+            <div class="container">
+                <nav class="navigation">
+                    <div class="logo">
+                        <a href="../index.html"
+                            ><img
+                                src="/images/logo.png"
+                                id="logo-image"
+                                alt="logo of a company"
+                        /></a>
+                        <a
+                            ><img
+                                src="/images/dark-logo.png"
+                                id="dark-logo-image"
+                                alt="logo of a company"
+                        /></a>
+                    </div>
+                    <div class="navigation-bar">
+                        <ul id="navigation-pages">
+                            <li><a href="./menu/menu.html">Menu</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our services</a></li>
+                            <li><a href="#">Our Team</a></li>
+                        </ul>
+
+                        <div class="dark-mode">
+                            <img
+                                class="basket-icon"
+                                id="dark-mode-icon"
+                                src="../icons/market.png"
+                                alt=""
+                            />
+                        </div>
+                        <div id="menu-icon">
+                            <p>≡</p>
+                        </div>
+                    </div>
+                    <div class="theme-switcher"></div>
+                </nav>
+            </div>
+            <ul id="navigation-pages-phone">
+                <li><a href="./menu/menu.html">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our services</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </header>
+        <main class="page__content">
+            <div class="container">
+                <div class="filter-food">
+                    <label class="inputDes" for="foodName"
+                        >Food Category Filter:</label
+                    >
+                    <input
+                        id="foodName"
+                        class="filter"
+                        type="text"
+                        placeholder="Let's eat"
+                    />
+                </div>
+                <div class="cards"></div>
+            </div>
+
+            <div class="order-window"></div>
+            <!-- <div class="test-button">PRESS ME</div> -->
+            <div class="modal-window" id="modalWindow">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeBtn">&times;</span>
+                    <h2>Enter Your Details</h2>
+                    <form id="modalForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="region">Region:</label>
+                        <input type="text" id="region" name="region" required />
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required />
+
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" required />
+
+                        <label for="street">Street:</label>
+                        <input type="text" id="street" name="street" required />
+
+                        <label for="streetNumber">Street Number:</label>
+                        <input
+                            type="text"
+                            id="streetNumber"
+                            name="streetNumber"
+                            required
+                        />
+
+                        <button type="submit" id="saveBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="first-level-footer">
+                <div class="about-us-footer">
+                    <h3>Nazva Zakladu</h3>
+                    <a href="#">About Us</a>
+                    <a href="./menu/menu.html">Menu</a>
+                    <a href="#">Deals</a>
+                    <a href="#">Events</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Our Workers</a>
+                </div>
+                <div class="general-info">
+                    <h3>Information</h3>
+                    <a href="#">Delivery & Payment</a>
+                    <a href="#">Refunds</a>
+                    <a href="#">Partnership</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Vacancies</a>
+                    <a href="#">Loyalty Program</a>
+                </div>
+                <div class="contact">
+                    <h3>Feedback</h3>
+                    <a href="tel:+32987654321">+32 987 65 43 21</a>
+                    <a href="#">info@nazvazakladu.com</a>
+                    <a href="#" class="telegram">
+                        <img
+                            src="../images/telegram.png"
+                            alt="telegram logo"
+                            class="messanger-light"
+                        />
+                        <img
+                            src="../images/telegram-dark.png"
+                            alt="telegram logo"
+                            class="messanger-dark"
+                        />
+                        <p>Telegram</p>
+                    </a>
+                    <a href="#" class="viber">
+                        <img
+                            src="../images/viber.png"
+                            alt="viber logo"
+                            class="messanger-light"
+                        />
+                        <img
+                            src="../images/viber-dark.png"
+                            alt="viber logo"
+                            class="messanger-dark"
+                        />
+                        <p>Viber</p>
+                    </a>
+                    <a href="#" class="whatsapp">
+                        <img
+                            src="../images/whatsapp.png"
+                            alt="whatsapp logo"
+                            class="messanger-light"
+                        />
+                        <img
+                            src="../images/whatsapp-dark.png"
+                            alt="whatsapp logo"
+                            class="messanger-dark"
+                        />
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#"
+                        ><img
+                            src="../images/facebook.png"
+                            class="social-app"
+                            alt="facebook white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/instagram.png"
+                            class="social-app"
+                            alt="instagram white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/linkedin.png"
+                            class="social-app"
+                            alt="linkedin white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/tiktok.png"
+                            class="social-app"
+                            alt="tiktok white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/twitter.png"
+                            class="social-app"
+                            alt="new twitter white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/facebook-dark.png"
+                            class="social-app-dark"
+                            alt="facebook white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/instagram-dark.png"
+                            class="social-app-dark"
+                            alt="instagram white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/linkedin-dark.png"
+                            class="social-app-dark"
+                            alt="linkedin white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/tiktok-dark.png"
+                            class="social-app-dark"
+                            alt="tiktok white round icon"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../images/twitter-dark.png"
+                            class="social-app-dark"
+                            alt="new twitter white round icon"
+                    /></a>
+                </div>
+            </div>
+            <div class="second-level-footer">
+                <div class="payment-options">
+                    <img src="../images/Bancontact.png" alt="Bancontact logo" />
+                    <img
+                        src="../images/Mastercard-Logo.png"
+                        alt="mastercard logo"
+                    />
+                    <img src="../images/symbols.png" alt="visa logo" />
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2024 Nazva Zakladu</p>
+                    <img
+                        src="../images/vda-be.png"
+                        alt="logo of the creators of the site"
+                    />
+                </div>
+            </div>
+        </footer>
+        <div class="order-overlay"></div>
+    </body>
+</html>

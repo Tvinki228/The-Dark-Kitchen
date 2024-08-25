@@ -1,0 +1,729 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ff595e;
+    border-bottom: 2px solid #ffca3a;
+    height: 100px;
+    padding: 24px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo-image {
+    width: 130px;
+    padding: 0 0 0 50px;
+    transition: 0.6s;
+}
+
+.logo #dark-logo-image {
+    display: none;
+    width: 130px;
+    padding: 0 0 0 50px;
+    transition: 0.6s;
+}
+
+#logo-image:hover {
+    transform: scale(1.1);
+}
+
+li {
+    list-style: none;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation-pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffca3a;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navigation-pages li {
+    padding-left: 20px;
+    transition: 0.6s;
+}
+
+#navigation-pages li:hover {
+    transform: scale(1.1);
+}
+
+#navigation-pages li a {
+    text-decoration: none;
+    color: #ffca3a;
+    font-size: 20px;
+}
+
+#navigation-pages li a:hover {
+    color: white;
+}
+
+#navigation-pages-phone {
+    display: none;
+}
+
+#dark-mode-icon {
+    width: 35px;
+    padding: 8px 50px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#dark-mode-icon:hover {
+    transform: scale(1.1);
+}
+
+#light-mode-icon {
+    display: none;
+}
+
+.dark-mode-active #dark-mode-icon {
+    display: none;
+}
+
+.dark-mode-active #light-mode-icon {
+    display: block;
+    width: 35px;
+    padding: 8px 50px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.dark-mode-active #light-mode-icon:hover {
+    transform: scale(1.1);
+}
+
+#menu-icon {
+    display: none;
+}
+
+/* Темна тема */
+.dark-mode-active #header {
+    background-color: black; /* Фон header в темній темі */
+}
+
+.dark-mode-active #logo-image {
+    display: none;
+}
+
+.dark-mode-active #dark-logo-image {
+    display: block;
+}
+
+.dark-mode-active #navigation-pages a {
+    color: #dc1a1a;
+}
+
+.image-bar {
+    background-image: url(/images/borscht.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.image-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    color: #febf11;
+    text-align: left;
+    padding: 10px;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.text-overlay #main-header {
+    font-size: 70px;
+    padding: 200px 250px 0 70px;
+    margin-bottom: 0;
+}
+
+.text-overlay #subheader {
+    font-size: 40px;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: normal;
+    padding: 0 0 0 70px;
+    margin-top: 10px;
+}
+
+.about-us-section {
+    font-family: "Tenor Sans", sans-serif;
+    background-color: #ffca3a;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    color: #6a4c93;
+}
+#about-us-description {
+    font-size: 25px;
+    padding: 40px 140px 40px 85px;
+}
+#about-us-description h2 {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+#menu-link {
+    background-color: #6a4c93;
+    color: #ffca3a;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.6s;
+}
+
+#menu-link:hover {
+    transform: scale(1.1);
+}
+
+.about-us-section img {
+    width: 450px;
+    height: 297px;
+    padding-top: 120px;
+    padding-right: 85px;
+    transition: 0.6s;
+}
+
+.about-us-section img:hover {
+    transform: scale(1.1);
+}
+
+.dark-mode-active .about-us-section {
+    background-color: #dc1a1a;
+}
+
+.dark-mode-active #about-us-description {
+    color: black;
+}
+
+/* Стилі для menu-link */
+.dark-mode-active #menu-link {
+    background-color: black;
+    color: white;
+}
+
+.advantages {
+    background-color: #8ac926;
+    font-family: "Tenor Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 520px;
+    justify-content: space-around;
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    transition: 0.6s;
+}
+
+.advantage-item:hover {
+    transform: scale(1.1);
+}
+
+.advantages h3 {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+}
+
+.advantage-img {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.advantage-img-dark {
+    display: none;
+    width: 120px;
+}
+
+.dark-mode-active .advantage-img {
+    display: none;
+    width: 120px;
+}
+
+.dark-mode-active .advantage-img-dark {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.advantage-btn {
+    background-color: #6a4c93;
+    color: #ffca3a;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.6s;
+}
+
+.advantage-btn:hover {
+    transform: scale(1.3);
+}
+
+.dark-mode-active .advantages {
+    background-color: white;
+    color: rgb(246, 36, 36);
+}
+
+.dark-mode-active .advantage-btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #1982c4;
+    color: #ffca3a;
+    font-family: "Tenor Sans", sans-serif;
+    height: 630px;
+}
+
+.dark-mode-active footer {
+    background-color: #000000;
+    color: #dc1a1a;
+}
+
+.first-level-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffca3a;
+}
+
+.dark-mode-active .first-level-footer {
+    border-bottom: 2px solid #dc1a1a;
+}
+
+.about-us-footer h3, .general-info h3, .contact h3, .social-media h3 {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.about-us-footer, .general-info, .contact, .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: 2;
+}
+
+.about-us-footer a, .general-info a, .contact a {
+    text-decoration: none;
+    color: #ffca3a;
+}
+
+.dark-mode-active .about-us-footer a, .dark-mode-active .general-info a, .dark-mode-active .contact a {
+    text-decoration: none;
+    color: #dc1a1a;
+}
+
+.about-us-footer a:hover, .general-info a:hover, .contact a:hover {
+    color: white;
+}
+
+.telegram, .viber, .whatsapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.messanger-light {
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+}
+
+.messanger-dark {
+    display: none;
+}
+
+.dark-mode-active .messanger-light {
+    display: none;
+}
+
+.dark-mode-active .messanger-dark {
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+}
+
+.social-media {
+    display: inline-block;
+}
+
+.social-app {
+    display: inline-block;
+    width: 40px;
+    transition: 0.6s;
+}
+
+.social-app-dark {
+    display: none;
+}
+
+.dark-mode-active .social-app {
+    display: none;
+}
+
+.dark-mode-active .social-app-dark {
+    display: inline-block;
+    width: 40px;
+    transition: 0.6s;
+}
+
+.social-app:hover {
+    transform: scale(1.1);
+}
+
+.social-app-dark:hover {
+    transform: scale(1.1);
+}
+
+.second-level-footer {
+    padding-top: 40px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.payment-options img {
+    width: 50px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.copyright img {
+    width: 150px;
+}
+
+@media (max-width: 450px) {
+    header {
+        height: 50px;
+    }
+
+    #logo-image {
+        width: 70px;
+        padding: 0 0 0 25px;
+    }
+
+    .dark-mode-active #dark-logo-image {
+        width: 70px;
+        padding: 0 0 0 25px;
+    }
+
+    #dark-logo-image:hover {
+        transform: scale(1.1);
+    }
+
+    .navigation-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #dark-mode-icon {
+        width: 20px;
+        display: inline-block;
+        margin-right: 70px;
+    }
+
+    #navigation-pages {
+        display: none;
+    }
+
+    .dark-mode-active #navigation-pages-phone {
+        background-color: #dc1a1a;
+    }
+
+    .dark-mode-active #navigation-pages-phone li {
+        padding: 30px 10px;
+        border-bottom:1px solid black;
+    }
+
+    #navigation-pages-phone {
+        position: absolute;
+        top: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffca3a;
+        color: #ff595e;
+        justify-content: center;
+        align-items: left;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 20px;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.6s ease;
+        z-index: 2; /* Для забезпечення накладання на інші елементи */
+        margin-top: 50px;
+    }
+    
+    #navigation-pages-phone.active {
+        top: 50px; /* Відступ від верху для відображення меню */
+        opacity: 1;
+        max-height: 500px;
+    }
+
+    #navigation-pages-phone li {
+        padding: 30px 10px;
+        border-bottom:1px solid #ff595e;
+    }
+
+    .dark-mode-active #navigation-pages-phone li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #navigation-pages-phone li a {
+        text-decoration: none;
+        color:#ff595e;
+    }
+
+    .dark-mode-active #navigation-pages-phone li a:hover {
+        color: #ffca3a;
+    }
+    
+    #navigation-pages-phone li a:hover {
+        color: #6a4c93;
+    }
+
+    .dark-mode-active #menu-icon {
+        color: #dc1a1a;
+    }
+
+    #menu-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        font-size: 30px;
+        color: #ffca3a;
+        cursor: pointer;
+        bottom: 0;
+    }
+
+    #menu-icon.active + #navigation-pages {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        background-color: #ff595e;
+        border: 1px solid #ffca3a;
+        padding: 10px;
+    }
+
+    #navigation-pages li {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .image-bar {
+        height: 90vh;
+    }
+    
+    .image-bar::before {
+        height: 90vh;
+    }
+    
+    .text-overlay {
+        padding: 10px;
+    }
+    
+    .text-overlay #main-header {
+        font-size: 30px;
+        padding: 200px 20px 0 20px;
+    }
+    
+    .text-overlay #subheader {
+        font-size: 20px;
+        padding: 0 0 0 20px;
+        margin-top: 10px;
+    }
+
+    .about-us-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+    }
+
+    #about-us-description {
+        font-size: 17px;
+        padding: 20px 30px 0px 30px;
+    }
+    #about-us-description h2 {
+        font-size: 40px;
+    }
+    
+    .about-us-section img {
+        width: 250px;
+        height: auto;
+        padding-top: 0;
+        padding-right: 15px;
+    }
+    
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        height: 520px;
+        align-items: center;
+    }
+    
+    .advantage-item {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        transition: none;
+    }
+
+    .advantage-item:hover {
+        transform: none;
+    }
+    
+    .advantages h3 {
+        font-size: 13px;
+    }
+    
+    .advantage-img {
+        width: 60px;
+        padding-right: 20px;
+    }
+
+    .dark-mode-active .advantage-img-dark {
+        width: 60px;
+        padding-right: 20px;
+    }
+
+    .advantage-item-one-side, .advantage-item-other-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        width: 30%;
+    }
+
+    .advantage-item-other-side {
+        width: 70%;
+    }
+    
+    .advantage-btn {
+        transition: none;
+    }
+
+    .advantage-btn:hover {
+        transform: none;
+        color: white;
+    }
+
+    footer {
+        background-color: #1982c4;
+        height: 100%;
+    }
+    
+    .first-level-footer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-left: 40px;
+        background-color: #1982c4;
+    }
+
+    .dark-mode-active .first-level-footer {
+        background-color: #000000;
+    }
+    
+    .about-us-footer h3, .general-info h3, .contact h3, .social-media h3 {
+        font-size: 18px;
+    }
+    
+    .about-us-footer a, .general-info a, .contact a {
+        display: none;
+    }
+
+    .about-us-footer.active a, .general-info.active a, .contact.active a {
+        display: block;
+        margin-left: 10px;
+        transition: all 0.4s ease;
+    }
+
+    .about-us-footer.active h3, .general-info.active h3, .contact.active h3 {
+        cursor: pointer;
+    }
+    
+    .telegram, .viber, .whatsapp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+    }
+
+    .messanger-light {
+        display: none;
+    }
+
+    .dark-mode-active .messanger-dark {
+        display: none;
+    }
+    
+    .second-level-footer {
+        background-color: #1982c4;
+    }
+
+    .dark-mode-active .second-level-footer {
+        background-color: #000000;
+    }
